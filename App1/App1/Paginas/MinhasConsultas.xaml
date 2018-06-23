@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.MinhasConsultas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Digite o CPF"/>
+            <Entry x:Name="CPF" Placeholder="123.456.789-10"/>
+            <Button Text="Buscar" Clicked="Cbusca"/>
+            <Button Text="Marcar Consultas" Clicked="GoConsultas"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="" x:Name="lblCount"/>
+                <ListView x:Name="ListaVagas" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="100"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <StackLayout Grid.Column="0">
+                                        <Label Grid.Column="0" Text="{Binding NomePaciente}" FontAttributes="Bold"/>
+                                        <Label Grid.Column="0" Text="{Binding Cidade}"/>
+                                        <Label Grid.Column="0" Text="{Binding Horario}"/>
+                                    </StackLayout>
+                                    <Label Grid.Column="1" Text="+Detalhes">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="MaisDetalhe" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                    <Label Grid.Column="2" Text="Cancelar">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="Cancelar" CommandParameter="{Binding .}"/>
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.PaginaInicial"
+             Title = "Agendamento de consultas">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <StackLayout HorizontalOptions="Center">
+                <Label Text="Governo Do Estado do Espírito Santo"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0">
+                <BoxView BackgroundColor="LightBlue"/>
+                <BoxView BackgroundColor="WhiteSmoke"/>
+                <BoxView BackgroundColor="LightPink"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="10" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Button Text="Entrar - PACIENTE" Clicked="GoConsultas"/>
+                <Button Text="Verificar Consultas" Clicked="GoVConsultas"/>
+                <Button Text="Exames" Clicked="GoExames"/>
+                <Button Text="Cancelar Consultas" Clicked="GoVConsultas"/>
+                <Button Text="Sobre" Clicked="GoSobre"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

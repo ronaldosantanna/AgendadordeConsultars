@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.Sobre"
+             Title="Sobre">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Snow" Margin="10">
+            <Label Text="Alunos:" FontSize="Medium" FontAttributes="Bold" TextColor="Black"/>
+            <Label Text="Clauber Rocha" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Kevyn Marins" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Ronaldo Sant'Anna" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Sávio Granato" FontSize="Medium" TextColor="Black"/>
+            <Label Text="Entre em contato conosco:" FontSize="Medium" TextColor="Black"/>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Label Text="Trabalho desenvolvido pelos alunos do curso de Engenharia Elétrica do Instituto Federal do Espírito Santo - IFES." FontSize="Medium" FontAttributes="Italic"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

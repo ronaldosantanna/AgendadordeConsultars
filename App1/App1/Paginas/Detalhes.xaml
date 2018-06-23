@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.Detalhes">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nome do Paciente:"/>
+            <Label Text="{Binding NomePaciente}"/>
+            <Label Text="CPF cadastrado:"/>
+            <Label Text="{Binding Cpf}"/>
+            <Label Text="Nome do médico:"/>
+            <Label Text="{Binding NomeMedico}"/>
+            <Label Text="Cidade de atendimento: "/>
+            <Label Text="{Binding Cidade}"/>
+            <Label Text="Horário de atendimento: "/>
+            <Label Text="{Binding Horario}"/>
+            <Label Text="Data de atendimento:"/>
+            <Label Text="{Binding Data}"/>
+            <Label Text="Especialidade:"/>
+            <Label Text="{Binding Especialidade}"/>
+            <Label Text="Situação de atendimento:"/>
+            <Label Text="{Binding situacao}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

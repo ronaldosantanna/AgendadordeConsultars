@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.Cadastro"
+             Title="Cadastro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Parece que esse é seu primeiro acesso." FontSize="Large" FontAttributes="Bold"/>
+                <Label Text="Por favor digite os dados para o cadastro." FontSize="Medium" FontAttributes="Bold"/>
+                <Label Text="Nome:"/>
+                <Entry x:Name="NomePac" Placeholder="Nome Sobrenome"/>
+                <Label Text="Telefone:"/>
+                <Entry x:Name="tel" Placeholder="(00) 99999-9999"/>
+                <Label Text="Cidade:"/>
+                <Entry x:Name="cit" Placeholder="Guarapari"/>
+                <Button Text="Salvar" Clicked="cSalvar"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

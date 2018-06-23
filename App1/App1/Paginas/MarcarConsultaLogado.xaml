@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.MarcarConsultaLogado">
+    <ContentPage.Content>
+        <StackLayout Margin="10">
+            <Label Text="Especialidade:"/>
+            <Picker x:Name="Pick">
+                <Picker.Items>
+                    <x:String>Alergia/Imunologia</x:String>
+                    <x:String>Angiologia</x:String>
+                    <x:String>Cardiologia</x:String>
+                    <x:String>Cirurgia Geral</x:String>
+                    <x:String>Cirurgia Pediátrica</x:String>
+                    <x:String>Cirurgia Plástica</x:String>
+                    <x:String>Clínica Médica</x:String>
+                    <x:String>Dermatologia</x:String>
+                    <x:String>Endocrinologia</x:String>
+                    <x:String>Fonoaudiologia</x:String>
+                    <x:String>Gastroenterologia</x:String>
+                    <x:String>Geral</x:String>
+                    <x:String>Geriatria</x:String>
+                    <x:String>Ginecologia</x:String>
+                    <x:String>Nutricionista</x:String>
+                    <x:String>Obstetrícia</x:String>
+                    <x:String>Odontologia</x:String>
+                    <x:String>Oftalmologia</x:String>
+                    <x:String>Oncologia</x:String>
+                    <x:String>Ortopedia</x:String>
+                    <x:String>Otorrinolaringologia</x:String>
+                    <x:String>Pediatria</x:String>
+                    <x:String>Psicologia</x:String>
+                    <x:String>Proctologia</x:String>
+                    <x:String>Psiquiatria</x:String>
+                    <x:String>Reumatologia</x:String>
+                    <x:String>Urologia</x:String>
+                    <x:String>Neurocirurgia</x:String>
+                    <x:String>Ginecologia</x:String>
+                    <x:String>Ginecologia</x:String>
+                    <x:String>Ginecologia</x:String>
+                    <x:String>Ginecologia</x:String>
+                    <x:String>Ginecologia</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button Text="Salvar" Clicked="BSALVAR"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

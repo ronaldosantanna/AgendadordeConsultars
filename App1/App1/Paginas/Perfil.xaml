@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.Perfil"
+             Title="Perfil">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <ListView x:Name="ListaVagas" HasUnevenRows="True" SeparatorColor="White">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="White">
+                                    <Label Text="Nome:"/>
+                                    <Label Text="{Binding NomePaciente}" FontAttributes="Bold"/>
+                                    <Label Text="CPF:"/>
+                                    <Label Text="{Binding Cpf}"/>
+                                    <Label Text="Telefone:"/>
+                                    <Label Text="{Binding Telefone}"/>
+                                    <Label Text="Cidade:"/>
+                                    <Label Text="{Binding Cidade}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+            <Button Text="Marcar Consultas" Clicked="Mconsultas"/>
+            <Button Text="Marcar Exames" Clicked="Mexames"/>
+            <Button Text="Verificar agendamentos" Clicked="Vconsultas"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

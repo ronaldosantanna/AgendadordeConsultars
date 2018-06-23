@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Paginas.MarcarExames"
+             Title="Exames">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" Margin="10">
+                <Label Text="Marque aqui seu exame"/>
+                <Label Text="Digite seu CPF:"/>
+                <Entry x:Name="Cpf" Placeholder="123.456.789-10"/>
+                <Label Text="Esolha seu exame:"/>
+                <Picker x:Name="Pick" ItemDisplayBinding="Angio Ressonância Magnética">
+                    <Picker.Items>
+                        <x:String>Angio Ressonância Magnética</x:String>
+                        <x:String>Angio Tomografia</x:String>
+                        <x:String>Arteriografia Renal</x:String>
+                        <x:String>Bera</x:String>
+                        <x:String>Cataterismo</x:String>
+                        <x:String>Creatinina</x:String>
+                        <x:String>Eletrocargiograma</x:String>
+                        <x:String>Glicemia</x:String>
+                        <x:String>Hepatite A</x:String>
+                        <x:String>Hepatite B</x:String>
+                        <x:String>Hepatite C</x:String>
+                        <x:String>HPV</x:String>
+                        <x:String>Mamografia</x:String>
+                        <x:String>Raio X</x:String>
+                        <x:String>Ressonância Magnética Geral</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label Text="Nome:" />
+                <Entry x:Name="Name" Placeholder="Nome Completo"/>
+                <Label Text="Telefone:" />
+                <Entry x:Name="Telefone" Placeholder="(00) 99999-9999"/>
+                <Button Text="Marcar" Clicked="Bmarcar"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
